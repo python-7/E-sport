@@ -38,10 +38,11 @@
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
         <div v-for="category in jerseyCategories" :key="category.name"
              class="cursor-pointer hover:scale-105 transform transition duration-300 group">
-          <NuxtLink :to="`/products?category=${category.name}`" class="block">
+          <NuxtLink :to="`/products?category=${encodeURIComponent(category.name)}`" class="block">
             <div class="relative w-40 h-40 md:w-48 md:h-48 rounded-xl overflow-hidden shadow-2xl">
               <img :src="category.image" :alt="category.name"
-                   class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                   class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                   onerror="this.onerror=null;this.src='https://placehold.co/600x400/1F2937/F9FAFB?text=No+Image+Available';" />
               <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
                 <p class="text-xl font-bold text-white tracking-wide uppercase">{{ category.name }}</p>
               </div>
@@ -55,12 +56,12 @@
 
 <script setup>
 const jerseyCategories = [
-  // Mock image URLs - replace with your actual images
-  { name: 'Football', image: 'https://placehold.co/600x400/1F2937/F9FAFB?text=Football' },
-  { name: 'Basketball', image: 'https://placehold.co/600x400/1F2937/F9FAFB?text=Basketball' },
-  { name: 'Baseball', image: 'https://placehold.co/600x400/1F2937/F9FAFB?text=Baseball' },
-  { name: 'Hockey', image: 'https://placehold.co/600x400/1F2937/F9FAFB?text=Hockey' },
-  { name: 'Soccer', image: 'https://placehold.co/600x400/1F2937/F9FAFB?text=Soccer' },
-  { name: 'Esports', image: 'https://placehold.co/600x400/1F2937/F9FAFB?text=Esports' }
+  // Prefer using images in the public/ folder so they are served as static assets
+  { name: 'Football', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
+  { name: 'Basketball', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
+  { name: 'Baseball', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
+  { name: 'Hockey', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
+  { name: 'Soccer', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
+  { name: 'Esports', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' }
 ];
 </script>
