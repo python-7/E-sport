@@ -45,7 +45,7 @@
             
             <div class="p-4">
               <h2 class="text-xl font-semibold text-green-400 mb-1">{{ product.name }}</h2>
-              <p class="text-gray-400">Price: <span class="font-bold text-lg">${{ product.price }}</span></p>
+              <p class="text-gray-400">Price: <span class="font-bold text-lg">k{{ product.price }}</span></p>
             </div>
           </NuxtLink>
           <div class="p-4 border-t border-gray-700">
@@ -132,15 +132,15 @@ const setMessage = (msg, type) => {
 // Function to handle adding a product to the cart
 const addToCart = (product) => {
   cartAddToCart(product);
-  setMessage(`${product.name} has been added to your cart!`, 'success');
+  setMessage(`k{product.name} has been added to your cart!`, 'success');
 };
 
 onMounted(async () => {
   // Simulating an API call to fetch products. In a real app, this would be a real API endpoint.
   const allProducts = [
-    { id: 1, name: 'Cloud9 Pro Jersey', price: 65, category: 'Esports', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Cloud9' },
-    { id: 2, name: 'Fnatic 2023 Jersey', price: 60, category: 'Esports', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Fnatic' },
-    { id: 3, name: 'T1 Pro Player Jersey', price: 70, category: 'Esports', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=T1' },
+    { id: 1, name: 'Cloud9 Pro Jersey', price: 65, category: 'Esports', imageUrl: 'public/images/jerseys/images.jpg' },
+    { id: 2, name: 'Fnatic 2023 Jersey', price: 60, category: 'Esports', imageUrl: 'public/images/jerseys/images.jpg' },
+    { id: 3, name: 'T1 Pro Player Jersey', price: 70, category: 'Esports', imageUrl: 'public/images/jerseys/images.jpg' },
     { id: 4, name: 'Team Liquid Jersey', price: 55, category: 'Esports', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Team+Liquid' },
     { id: 5, name: 'Real Madrid Home Kit', price: 90, category: 'Soccer', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Real+Madrid' },
     { id: 6, name: 'Manchester United Away Jersey', price: 85, category: 'Soccer', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Man+U' },

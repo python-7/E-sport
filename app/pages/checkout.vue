@@ -23,12 +23,12 @@
               ></div>
               <span class="font-semibold text-lg">{{ item.text }} - #{{ item.number }}</span>
             </div>
-            <span class="text-gray-400">${{ item.price.toFixed(2) }}</span>
+            <span class="text-gray-400">K{{ item.price.toFixed(2) }}</span>
           </li>
         </ul>
         <div class="border-t border-gray-600 pt-4 mt-4 flex justify-between items-center text-xl font-bold">
           <span>Subtotal:</span>
-          <span>${{ cartTotal.toFixed(2) }}</span>
+          <span>K{{ cartTotal.toFixed(2) }}</span>
         </div>
       </div>
 

@@ -58,10 +58,10 @@
 const jerseyCategories = [
   // Prefer using images in the public/ folder so they are served as static assets
   { name: 'Football', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
-  { name: 'Basketball', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
-  { name: 'Baseball', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
-  { name: 'Hockey', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
-  { name: 'Soccer', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
+  { name: 'Basketball', image: '/images/jerseys/basketball-uniform-jersey.png' },
+  { name: 'Baseball', image: '/images/jerseys/blue-arc-sports-jersey-1.webp' },
+  { name: 'Hockey', image: '/images/jerseys/images.jpg' },
+  { name: 'Soccer', image: '/images/jerseys/optimized-greyblackfront.webp' },
   { name: 'Esports', image: '/images/jerseys/istockphoto-501279095-612x612.jpg' }
 ];
 </script>

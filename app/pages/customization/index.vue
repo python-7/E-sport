@@ -72,7 +72,7 @@
 
           <!-- Dynamic Price Display -->
           <div class="mt-6 text-2xl font-bold text-green-400">
-            Total: ${{ totalPrice.toFixed(2) }}
+            Total: K{{ totalPrice.toFixed(2) }}
           </div>
         </div>
 
@@ -142,7 +142,7 @@
                  onerror="this.onerror=null;this.src='https://placehold.co/600x400/1F2937/F9FAFB?text=No+Image';" />
             <div>
               <p class="font-bold text-lg text-gray-100">{{ item.name }}</p>
-              <p class="text-sm text-gray-400">Price: ${{ item.price.toFixed(2) }}</p>
+              <p class="text-sm text-gray-400">Price: K{{ item.price.toFixed(2) }}</p>
             </div>
           </div>
           <button 
@@ -225,7 +225,7 @@ const jerseyNumber = ref(null);
 const jerseyTextColor = ref('#FFFFFF'); // Default to white
 
 // --- Price Calculation ---
-const basePrice = 50.00;
+const basePrice = 150.00;
 const customizationFee = 5.00;
 const totalPrice = computed(() => {
   let price = basePrice;

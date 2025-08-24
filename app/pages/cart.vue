@@ -40,7 +40,7 @@
                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/1F2937/F9FAFB?text=No+Image';" />
               <div>
                 <span class="font-semibold text-lg">{{ item.name }}</span>
-                <p class="text-sm text-gray-400">Price: ${{ item.price.toFixed(2) }}</p>
+                <p class="text-sm text-gray-400">Price: K{{ item.price.toFixed(2) }}</p>
               </div>
             </div>
 
@@ -75,7 +75,7 @@
         <div class="border-t border-gray-600 pt-6 mt-6">
           <div class="flex justify-between items-center text-xl font-bold mb-4">
             <span>Total:</span>
-            <span>${{ cartTotal.toFixed(2) }}</span>
+            <span>K{{ cartTotal.toFixed(2) }}</span>
           </div>
           <NuxtLink to="/checkout">
             <button class="w-full bg-green-500 hover:bg-green-400 text-gray-950 font-bold py-3 px-6 rounded-lg shadow-lg transition-colors transform hover:scale-105">
