@@ -138,20 +138,20 @@ const addToCart = (product) => {
 onMounted(async () => {
   // Simulating an API call to fetch products. In a real app, this would be a real API endpoint.
   const allProducts = [
-    { id: 1, name: 'Cloud9 Pro Jersey', price: 65, category: 'Esports', imageUrl: 'public/images/jerseys/images.jpg' },
-    { id: 2, name: 'Fnatic 2023 Jersey', price: 60, category: 'Esports', imageUrl: 'public/images/jerseys/images.jpg' },
-    { id: 3, name: 'T1 Pro Player Jersey', price: 70, category: 'Esports', imageUrl: 'public/images/jerseys/images.jpg' },
-    { id: 4, name: 'Team Liquid Jersey', price: 55, category: 'Esports', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Team+Liquid' },
-    { id: 5, name: 'Real Madrid Home Kit', price: 90, category: 'Soccer', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Real+Madrid' },
-    { id: 6, name: 'Manchester United Away Jersey', price: 85, category: 'Soccer', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Man+U' },
-    { id: 7, name: 'Boston Celtics Jersey', price: 110, category: 'Basketball', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Celtics' },
-    { id: 8, name: 'LA Lakers Classic Jersey', price: 120, category: 'Basketball', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Lakers' },
-    { id: 9, name: 'New York Yankees Jersey', price: 100, category: 'Baseball', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Yankees' },
-    { id: 10, name: 'Toronto Blue Jays Jersey', price: 95, category: 'Baseball', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Blue+Jays' },
-    { id: 11, name: 'Pittsburgh Penguins Jersey', price: 130, category: 'Hockey', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Penguins' },
-    { id: 12, name: 'Chicago Blackhawks Jersey', price: 125, category: 'Hockey', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Blackhawks' },
-    { id: 13, name: 'Dallas Cowboys Jersey', price: 150, category: 'Football', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Cowboys' },
-    { id: 14, name: 'Green Bay Packers Jersey', price: 145, category: 'Football', imageUrl: 'https://placehold.co/600x400/292B32/9CA3AF?text=Packers' }
+    { id: 1, name: 'Cloud9 Pro Jersey', price: 600, category: 'Esports', imageUrl: '/images/jerseys/istockphoto-501279095-612x612.jpg' },
+    { id: 2, name: 'Fnatic 2023 Jersey', price: 600, category: 'Esports', imageUrl: '/images/jerseys/basketball-uniform-jersey.png' },
+    { id: 3, name: 'T1 Pro Player Jersey', price: 600, category: 'Esports', imageUrl: '/images/jerseys/images.jpg' },
+    { id: 4, name: 'Team Liquid Jersey', price: 600, category: 'Esports', imageUrl: '/images/jerseys/blue-arc-sports-jersey-1.webp' },
+    { id: 5, name: 'Real Madrid Home Kit', price: 600, category: 'Soccer', imageUrl: '/images/jerseys/optimized-greyblackfront.webp' },
+    { id: 6, name: 'Manchester United Away Jersey', price: 650, category: 'Soccer', imageUrl: 'images/jerseys/download.jpg' },
+    { id: 7, name: 'Boston Celtics Jersey', price: 690, category: 'Basketball', imageUrl: 'images/jerseys/download.jpg' },
+    { id: 8, name: 'LA Lakers Classic Jersey', price: 620, category: 'Basketball', imageUrl: 'images/jerseys/download.jpg' },
+    { id: 9, name: 'New York Yankees Jersey', price: 600, category: 'Baseball', imageUrl: 'images/jerseys/download.jpg' },
+    { id: 10, name: 'Toronto Blue Jays Jersey', price: 630, category: 'Baseball', imageUrl: 'images/jerseys/download.jpg' },
+    { id: 11, name: 'Pittsburgh Penguins Jersey', price: 630, category: 'Hockey', imageUrl: 'images/jerseys/download.jpg' },
+    { id: 12, name: 'Chicago Blackhawks Jersey', price: 625, category: 'Hockey', imageUrl: 'images/jerseys/download.jpg' },
+    { id: 13, name: 'Dallas Cowboys Jersey', price: 650, category: 'Football', imageUrl: 'images/jerseys/download.jpg' },
+    { id: 14, name: 'Green Bay Packers Jersey', price: 745, category: 'Football', imageUrl: 'images/jerseys/download.jpg'}
   ];
   products.value = allProducts;
 });
